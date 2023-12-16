@@ -513,14 +513,14 @@ router.post('/send_order_confirm', uenc, (req, res) => {
         from: process.env.user_name,
         to: req.body.usermail,
         subject: `Your Myntra order #${req.body.orderid} of ${req.body.total_items} items`,
-        html: `<a target='_blank' href='http://localhost:3000'>Your Orders</a> | <a target='_blank' href='http://localhost:3000'>Your Account</a> | <a target='_blank' href='http://localhost:3000'>Myntra.com</a>
+        html: `<a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Your Orders</a> | <a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Your Account</a> | <a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Myntra.com</a>
         <br></br>
         <hr/>
         Order Confirmation - Order #${req.body.orderid}
         <br></br>
         Hello ${req.body.username},
         <br/>
-        Thank you for your order. We’ll send a confirmation when your order ships. If you would like to view the status of your order or make any changes to it, please visit <a target='_blank' href='http://localhost:3000'>Your Orders</a> on Myntra.
+        Thank you for your order. We’ll send a confirmation when your order ships. If you would like to view the status of your order or make any changes to it, please visit <a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Your Orders</a> on Myntra.
         <br></br>
         Yor order will be sent to :
         ${req.body.username},

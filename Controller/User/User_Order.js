@@ -497,14 +497,14 @@ exports.upd_order_status = (req, res) => {
                 from: process.env.user_name,
                 to: req.body.usermail,
                 subject: `Your Myntra order #${req.body.orderid} of ${req.body.total_items} items has been packed`,
-                html: `<a target='_blank' href='http://localhost:3000'>Your Orders</a> | <a target='_blank' href='http://localhost:3000'>Your Account</a> | <a target='_blank' href='http://localhost:3000'>Myntra.com</a>
+                html: `<a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Your Orders</a> | <a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Your Account</a> | <a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Myntra.com</a>
                     <br></br>
                     <hr/>
                     Packed Confirmation - Order #${req.body.orderid}
                     <br></br>
                     Hello ${req.body.username},
                     <br/>
-                    We thought you'd like to know that we've packed your item(s). Your order is on the way. If you need to return an item from this shipment or manage other orders, please visit <a target='_blank' href='http://localhost:3000'>Your Orders</a> on Myntra.
+                    We thought you'd like to know that we've packed your item(s). Your order is on the way. If you need to return an item from this shipment or manage other orders, please visit <a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Your Orders</a> on Myntra.
                     <br></br>
                     Yor order will be sent to :
                     ${req.body.username},
@@ -546,14 +546,14 @@ exports.upd_order_status = (req, res) => {
                 from: process.env.user_name,
                 to: req.body.usermail,
                 subject: `Your Myntra order #${req.body.orderid} of ${req.body.total_items} items has been shipped`,
-                html: `<a target='_blank' href='http://localhost:3000'>Your Orders</a> | <a target='_blank' href='http://localhost:3000'>Your Account</a> | <a target='_blank' href='http://localhost:3000'>Myntra.com</a>
+                html: `<a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Your Orders</a> | <a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Your Account</a> | <a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Myntra.com</a>
                     <br></br>
                     <hr/>
                     Shipped Confirmation - Order #${req.body.orderid}
                     <br></br>
                     Hello ${req.body.username},
                     <br/>
-                    We thought you'd like to know that we've shipped your item(s). Your order is on the way. If you need to return an item from this shipment or manage other orders, please visit <a target='_blank' href='http://localhost:3000'>Your Orders</a> on Myntra.
+                    We thought you'd like to know that we've shipped your item(s). Your order is on the way. If you need to return an item from this shipment or manage other orders, please visit <a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Your Orders</a> on Myntra.
                     <br></br>
                     Yor order will be sent to :
                     ${req.body.username},
@@ -595,7 +595,7 @@ exports.upd_order_status = (req, res) => {
                 from: process.env.user_name,
                 to: req.body.usermail,
                 subject: `Your Myntra order #${req.body.orderid} of ${req.body.total_items}`,
-                html: `<a target='_blank' href='http://localhost:3000'>Your Orders</a> | <a target='_blank' href='http://localhost:3000'>Your Account</a> | <a target='_blank' href='http://localhost:3000'>Myntra.com</a>
+                html: `<a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Your Orders</a> | <a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Your Account</a> | <a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Myntra.com</a>
                     <br></br>
                     <hr/>
                     Out For Delivery - Order #${req.body.orderid}
@@ -622,7 +622,7 @@ exports.upd_order_status = (req, res) => {
                 from: process.env.user_name,
                 to: req.body.usermail,
                 subject: `Your Myntra order #${req.body.orderid} of ${req.body.total_items} has been Delivered`,
-                html: `<a target='_blank' href='http://localhost:3000'>Your Orders</a> | <a target='_blank' href='http://localhost:3000'>Your Account</a> | <a target='_blank' href='http://localhost:3000'>Myntra.com</a>
+                html: `<a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Your Orders</a> | <a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Your Account</a> | <a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Myntra.com</a>
                     <br></br>
                     <hr/>
                     Delivered - Order #${req.body.orderid}
@@ -649,7 +649,7 @@ exports.upd_order_status = (req, res) => {
                 from: process.env.user_name,
                 to: req.body.usermail,
                 subject: `Your Myntra order #${req.body.orderid} of ${req.body.total_items} has been Cancelled`,
-                html: `<a target='_blank' href='http://localhost:3000'>Your Orders</a> | <a target='_blank' href='http://localhost:3000'>Your Account</a> | <a target='_blank' href='http://localhost:3000'>Myntra.com</a>
+                html: `<a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Your Orders</a> | <a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Your Account</a> | <a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Myntra.com</a>
                     <br></br>
                     <hr/>
                     Cancelled - Order #${req.body.orderid}

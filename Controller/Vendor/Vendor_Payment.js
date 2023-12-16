@@ -31,7 +31,7 @@ exports.add_payment = (req, res) => {
                 from: process.env.user_name,
                 to: req.body.vendor_email,
                 subject: `Vendor Payments: Product Id #${req.body.product_id} in Order #${req.body.order_id} amount has been paid`,
-                html: `<a target='_blank' href='http://localhost:3000'>Your Orders</a> | <a target='_blank' href='http://localhost:3000'>Your Account</a> | <a target='_blank' href='http://localhost:3000'>Myntra.com</a>
+                html: `<a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Your Orders</a> | <a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Your Account</a> | <a target='_blank' href='https://kiruthiga-12-myntra-clone-frontend.onrender.com'>Myntra.com</a>
                 <br></br>
                 <hr/>
                 <br></br>
