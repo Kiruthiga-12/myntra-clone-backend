@@ -45,6 +45,7 @@ exports.del_subcat_prodcat = (req, res) => {
 
 //update product in product table
 exports.edit_prodcat_prodcat = (req, res) => {
+
     productcategory.updateOne({ category: req.query.category, subcategory: req.query.subcategory, productcategory: req.query.product }, {
         $set: {
             category: req.body.catvalue,

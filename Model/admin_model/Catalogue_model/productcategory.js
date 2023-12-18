@@ -9,8 +9,7 @@ const sch = new mongoose.Schema(
             type: String
         },
         productcategory: {
-            type: String,
-            unique: true
+            type: String
         }
     }
 )
