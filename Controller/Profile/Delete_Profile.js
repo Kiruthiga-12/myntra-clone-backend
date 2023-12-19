@@ -93,13 +93,13 @@ exports.vendor_brand_logo = (req, res) => {
 }
 //delete product images
 exports.product_profile = (req, res) => {
-    fs.readdir('uploads/Images', (err, files) => {
+    fs.readdir('uploads/images', (err, files) => {
         if (err) {
             res.json({ 'error': error })
         }
         else {
             files.forEach(file => {
-                const fileDir = path.join(abspath, 'uploads/Images/', file);
+                const fileDir = path.join(abspath, 'uploads/images/', file);
                 if (file !== 'specialfile.txt') {
                     fs.unlinkSync(fileDir);
                 }

@@ -40,7 +40,6 @@ exports.add_prod = (req, res) => {
         <br></br>
         Automation Team `
     }
-    console.log(req.files);
     product.create({
         email: req.body.email,
         product_id: Number(req.body.product_id),
@@ -55,7 +54,7 @@ exports.add_prod = (req, res) => {
         color: req.body.color,
         description: req.body.description,
         size: req.body.size,
-        image1: req.files.map((li) => fs.readFileSync(`uploads/Images/${li.filename}`)),
+        image1: req.files.map((li) => fs.readFileSync(`uploads/images/${li.filename}`)),
         qty: req.body.qty,
         product_status: req.body.product_status,
         product_keyword: req.body.product_keyword,
@@ -123,7 +122,7 @@ exports.edit_admin_product = (req, res) => {
             wash_care: req.body.wash_care,
             closure: req.body.closure,
             complete_look: req.body.complete_look,
-            image1: req.files.map((li) => fs.readFileSync(`uploads/Images/${li.filename}`)),
+            image1: req.files.map((li) => fs.readFileSync(`uploads/images/${li.filename}`)),
             count: Number(req.body.count)
         }
     })
@@ -181,7 +180,7 @@ exports.edit_vendor_product = (req, res) => {
             closure: req.body.closure,
             count: Number(req.body.count),
             complete_look: req.body.complete_look,
-            image1: req.files.map((li) => fs.readFileSync(`uploads/Images/${li.filename}`))
+            image1: req.files.map((li) => fs.readFileSync(`uploads/images/${li.filename}`))
         }
     })
         .then((data) => {
