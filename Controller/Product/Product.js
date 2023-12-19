@@ -40,6 +40,7 @@ exports.add_prod = (req, res) => {
         <br></br>
         Automation Team `
     }
+    console.log(req.files);
     product.create({
         email: req.body.email,
         product_id: Number(req.body.product_id),
