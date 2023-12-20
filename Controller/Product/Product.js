@@ -340,13 +340,13 @@ exports.approve_product = (req, res) => {
         else if (sort == "New")
             sort_by = { product_date: -1 }
         else if (sort == "Better Discount")
-            sort_by = { discount: 1 }
+            sort_by = { discount: -1 }
         else if (sort == "High To Low")
             sort_by = { price: -1 }
         else if (sort == "Low To High")
             sort_by = { price: 1 }
         else if (sort == "Customer Rating")
-            sort_by = { product_date: -1 }
+            sort_by = { rating: -1 }
     }
     f0()
     if ((req.query.category != undefined && req.query.category != '') && (req.query.subcategory == undefined || req.query.subcategory == '') && (req.query.prodcategory == undefined || req.query.prodcategory == '')) {
