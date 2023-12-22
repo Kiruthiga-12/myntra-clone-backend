@@ -55,7 +55,7 @@ exports.create_order = (req, res) => {
 }
 //get order_count
 exports.count = (req, res) => {
-    user_order.find().count()
+    user_order.find({user_id: req.query.user_id}).count()
         .then((data) => res.send({ data }))
         .catch((error) => res.json({ Error: error.message }))
 }
