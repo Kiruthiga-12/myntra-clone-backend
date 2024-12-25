@@ -567,7 +567,8 @@ router.post('/payment_redirect', uenc, async (req, res) => {
         amount: req.body.total_amount * 100,
         currency: "inr",
         customer: customer.id,
-        payment_method_types: ['card']
+        payment_method_types: ['card'],
+        description : customer.id + " have to pay Rs." + req.body.total_amount 
     })
         .then((data) => {
             res.send({
