@@ -686,8 +686,10 @@ exports.get_ord_cnt = (req, res) => {
     user_order.aggregate([
         { $group: { _id: { $substr: ['$order_id', 0, 10] }, count: { $sum: 1 } } },
         { $sort: { _id: -1 } }
-    ]).limit(1)
-        .then((data) => res.send({ 'data': data }))
+    ])
+        // .limit(1)
+        // .then((data) => res.send({ 'data': data }))
+        .then((data) => res.send(data)
         .catch((error) => res.json({ Error: error.message }))
 }
 //get total sales amount 
