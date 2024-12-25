@@ -686,7 +686,7 @@ exports.get_ord_cnt = (req, res) => {
     user_order.aggregate([
         { $group: { _id: { $substr: ['$order_id', 0, 10] }, count: { $sum: 1 } } },
         { $sort: { _id: -1 } }
-    ]).collation({locale:"en_US",numericalOrdering:true})
+    ]).collation({locale:"en_US",numericOrdering:true})
         .limit(1)
         .then((data) => res.send({ 'data': data }))
         .catch((error) => res.json({ Error: error.message }))
