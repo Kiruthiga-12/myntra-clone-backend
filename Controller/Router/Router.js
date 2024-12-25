@@ -560,15 +560,13 @@ router.post('/send_order_confirm', uenc, (req, res) => {
 router.post('/payment_redirect', uenc, async (req, res) => {
     const customer = await stripe.customers.create({
         email: req.body.email,
-        name: req.body.name,
-        description : req.body.email + " " + req.body.name
+        name: req.body.name
     });
     const payment_method = await stripe.paymentIntents.create({
         amount: req.body.total_amount * 100,
         currency: "inr",
         customer: customer.id,
-        payment_method_types: ['card'],
-        description : customer.id + " have to pay Rs." + req.body.total_amount 
+        payment_method_types: ['card']
     })
         .then((data) => {
             res.send({
