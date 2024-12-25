@@ -689,7 +689,7 @@ exports.get_ord_cnt = (req, res) => {
     ])
         // .limit(1)
         // .then((data) => res.send({ 'data': data }))
-        .then((data) => res.send(data)
+        .then((data) => res.send(data))
         .catch((error) => res.json({ Error: error.message }))
 }
 //get total sales amount 
