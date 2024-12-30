@@ -720,4 +720,7 @@ router.post('/add_vendor_payment', uenc, vendor_payment.add_payment)
 router.get('/get_vendor_payment', vendor_payment.get_det);
 router.get('/vendor_sales_amount', vendor_payment.sales_amount);
 
+//to get Individual Product's Sold Count:
+router.get('/get_sold_count', user_order.sold_count);
+
 module.exports = router;
