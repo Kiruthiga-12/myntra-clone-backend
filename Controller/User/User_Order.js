@@ -730,3 +730,13 @@ exports.upd_order_itemstock = (req, res) => {
             .catch((error) => res.json({ Error: error.message }))
     }
 }
+
+//Sold Count:
+exports.sold_count = (req, res) => {
+    user_order.aggregate([
+        { $match: { vendor_email: req.query.vendor_email } },
+        { $group: { _id: { $substr: ['$product_id', 0, 10] }, count: { $sum: 1 } } }
+    ])
+        .then((data) => res.send(data))
+        .catch((error) => res.json({ Error: error.message }))
+}
